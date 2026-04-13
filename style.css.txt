@@ -1,0 +1,19 @@
+body {
+
+    font-family: Arial;
+    margin: 20px;
+
+}
+
+h1 {
+
+    color: darkblue;
+
+}
+
+button {
+
+    padding: 8px;
+    margin-left: 10px;
+
+}
