@@ -19,3 +19,6 @@ function addStudent() {
     input.value = "";
 
 }
+function clearStudents() {
+    document.getElementById("studentList").innerHTML = "";
+}
