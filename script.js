@@ -1,24 +1,18 @@
 function addStudent() {
+    const input = document.getElementById("studentName");
+    const name = input.value.trim();
 
-    let input =
-        document.getElementById("studentName");
+    if (name === "") {
+        alert("Please enter a student name");
+        return;
+    }
 
-    let studentName =
-        input.value;
+    const ul = document.getElementById("studentList");
 
-    let li =
-        document.createElement("li");
+    const li = document.createElement("li");
+    li.textContent = name;
 
-    li.textContent =
-        studentName;
-
-    document
-        .getElementById("studentList")
-        .appendChild(li);
+    ul.appendChild(li);
 
     input.value = "";
-
-}
-function clearStudents() {
-    document.getElementById("studentList").innerHTML = "";
 }
